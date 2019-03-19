@@ -732,7 +732,7 @@ p {
 
 .self-detail-relation {
   margin-top: 16px;
-  text-align: left
+  text-align: center
 }
 
 .self-detail-relation li {
@@ -744,18 +744,14 @@ p {
   width: 10px;
   height: 16px;
   margin-right: 16px;
-  vertical-align: sub
+  vertical-align: middle
 }
 
 .self-detail-relation li .img-email {
   width: 16px;
   height: 12px;
   margin-right: 16px;
-  vertical-align: sub
-}
-
-.self-detail-relation li:first-child {
-  text-align: right
+  vertical-align: middle
 }
 
 .self-detail-relation .self-center {
