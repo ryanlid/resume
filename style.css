@@ -191,5 +191,8 @@ footer a {
   footer {
     display: none;
   }
+  .no-prinf {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */
