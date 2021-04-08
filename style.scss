@@ -27,8 +27,8 @@ body {
   width: 1000px;
   max-width: 100%;
   margin: 0 auto;
-  padding: 30px 20px;
-  p {
+  padding: 20px 70px 20px 0;
+  p:not(:first-child) {
     margin-top: 10px;
   }
 }
@@ -51,7 +51,6 @@ a {
 
 .module4 {
   background: #00378d;
-  padding-bottom: 40px;
 }
 
 .module5 {
@@ -69,7 +68,7 @@ a {
 .module-title {
   width: 2em;
   border: 2px solid #ffffff;
-  padding: 0.4em;
+  padding: 0.2em 0.4em;
   margin: 0 auto;
 }
 
@@ -90,7 +89,7 @@ a {
 .contact {
   flex-wrap: wrap;
   flex: 1 0 0;
-  padding: 0 60px;
+  padding: 0 30px 0 40px;
   p {
     width: 180px;
     margin: 4px 0;
@@ -98,30 +97,51 @@ a {
 }
 
 .company-list {
+  flex: 1;
+
+  .company {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #bbb;
+    justify-content: space-between;
+
+    &:not(:first-child) {
+      margin-top: 14px;
+    }
+  }
+
+  .company-name {
+    font-size: 20px;
+    margin: 20px 0 0;
+    &:first-child {
+      margin: 0;
+    }
+  }
   .date {
     font-size: 18px;
-    // padding-top: 10px;
   }
-  .company {
-    margin-top: 10px;
-    font-size: 18px;
-  }
-  .company-name {
-    width: 260px;
-  }
+
   .company-work {
     font-size: 14px;
-    padding: 10px 0;
   }
 }
-
-.skill-list {
-  padding: 20px 0;
+.project {
+  line-height: 1.8;
 }
 
 .project-name {
-  font-size: 20px;
-  padding: 10px 0;
+  margin: 10px 0 10px;
+  font-size: 18px;
+}
+.project-desc {
+  border-left: 2px solid #ccc;
+  margin-top: 2px;
+  margin-bottom: 4px;
+  padding-left: 8px;
+}
+
+.project-work {
+  padding: 0 0 10px;
 }
 
 footer {
@@ -156,17 +176,35 @@ footer {
   }
 }
 
+@page {
+  margin-top: 1cm;
+  margin-bottom: 1cm;
+}
+
 @media print {
+  .page-break-before {
+    page-break-before: always;
+  }
+  .page-break-after {
+    page-break-after: always;
+  }
   body {
     color: #000;
   }
   .module {
+    padding: 6px 50px 6px 0;
     border-bottom: 1px solid #000;
+  }
+  .module-title {
+    border: 1px solid #111;
+  }
+  .module-title-wrapper {
+    flex: 0 0 100px;
   }
   footer {
     display: none;
   }
-  .no-prinf{
+  .no-prinf {
     display: none;
   }
 }

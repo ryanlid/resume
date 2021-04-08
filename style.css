@@ -37,10 +37,10 @@ body {
   width: 1000px;
   max-width: 100%;
   margin: 0 auto;
-  padding: 30px 20px;
+  padding: 20px 70px 20px 0;
 }
 
-.module p {
+.module p:not(:first-child) {
   margin-top: 10px;
 }
 
@@ -63,7 +63,6 @@ a {
 
 .module4 {
   background: #00378d;
-  padding-bottom: 40px;
 }
 
 .module5 {
@@ -83,7 +82,7 @@ a {
 .module-title {
   width: 2em;
   border: 2px solid #ffffff;
-  padding: 0.4em;
+  padding: 0.2em 0.4em;
   margin: 0 auto;
 }
 
@@ -108,7 +107,7 @@ a {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 0px;
           flex: 1 0 0;
-  padding: 0 60px;
+  padding: 0 30px 0 40px;
 }
 
 .contact p {
@@ -116,31 +115,60 @@ a {
   margin: 4px 0;
 }
 
+.company-list {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.company-list .company {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #bbb;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.company-list .company:not(:first-child) {
+  margin-top: 14px;
+}
+
+.company-list .company-name {
+  font-size: 20px;
+  margin: 20px 0 0;
+}
+
+.company-list .company-name:first-child {
+  margin: 0;
+}
+
 .company-list .date {
   font-size: 18px;
 }
 
-.company-list .company {
-  margin-top: 10px;
-  font-size: 18px;
-}
-
-.company-list .company-name {
-  width: 260px;
-}
-
 .company-list .company-work {
   font-size: 14px;
-  padding: 10px 0;
 }
 
-.skill-list {
-  padding: 20px 0;
+.project {
+  line-height: 1.8;
 }
 
 .project-name {
-  font-size: 20px;
-  padding: 10px 0;
+  margin: 10px 0 10px;
+  font-size: 18px;
+}
+
+.project-desc {
+  border-left: 2px solid #ccc;
+  margin-top: 2px;
+  margin-bottom: 4px;
+  padding-left: 8px;
+}
+
+.project-work {
+  padding: 0 0 10px;
 }
 
 footer {
@@ -181,12 +209,32 @@ footer a {
   text-decoration: none;
 }
 
+@page {
+  margin-top: 1cm;
+  margin-bottom: 1cm;
+}
+
 @media print {
+  .page-break-before {
+    page-break-before: always;
+  }
+  .page-break-after {
+    page-break-after: always;
+  }
   body {
     color: #000;
   }
   .module {
+    padding: 6px 50px 6px 0;
     border-bottom: 1px solid #000;
+  }
+  .module-title {
+    border: 1px solid #111;
+  }
+  .module-title-wrapper {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100px;
+            flex: 0 0 100px;
   }
   footer {
     display: none;
