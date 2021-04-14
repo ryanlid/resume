@@ -122,7 +122,7 @@ a {
   }
 
   .company-work {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 .project {
@@ -134,10 +134,11 @@ a {
   font-size: 18px;
 }
 .project-desc {
-  border-left: 2px solid #ccc;
+  border-left: 3px solid #ccc;
   margin-top: 2px;
-  margin-bottom: 4px;
+  margin-bottom: 6px;
   padding-left: 8px;
+  line-height: 1.2;
 }
 
 .project-work {
@@ -192,7 +193,7 @@ footer {
     color: #000;
   }
   .module {
-    padding: 6px 50px 6px 0;
+    padding: 4px 50px 6px 0;
     border-bottom: 1px solid #000;
   }
   .module-title {
