@@ -75,6 +75,10 @@ a {
   background: #0043ae;
 }
 
+.module7 {
+  background: #0048bd;
+}
+
 .module-title-wrapper {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 180px;
@@ -181,7 +185,7 @@ footer {
   height: 50px;
   line-height: 50px;
   text-align: center;
-  background: #0043ae;
+  background: #002559;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
